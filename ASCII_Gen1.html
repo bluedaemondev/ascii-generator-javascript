@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ASCII Generator v1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    
+</head>
+<body>
+    <div id="configs">
+
+
+
+        <input type="button" name="red" id="red" value="RED" onclick="setColour('#f00')"/>
+        <input type="button" name="green" id="green" value="GREEN" onclick="setColour('#0f0')"/>
+        <input type="button" name="blue" id="blue" value="BLUE" onclick="setColour('#00f')"/>
+        <input type="button" name="bluealt" id="bluealt" value="BLUE2" onclick="setColour('#00ff')"/>
+
+        <br>
+        <label for="characters">ASCII</label>
+        <input name="characters" type="text" onchange="setCharacters(value)"/><br>
+        <label for="width">COL</label>
+        <input name="width" type="text" onchange="setWidth(value)"/><br>
+        <label for="frequency">FRQ</label>
+        <input name="frequency" type="text" onchange="setFreq(value)"/><br>
+        <br>
+        <input name="reset" type="button" id="reset" value="restart" onclick="reset()">
+
+    </div>
+    <div id="output"></div>
+
+    <style>
+        body
+        {
+            color: cornsilk;
+            background-color: black;
+        }
+        #configs
+        {
+            position: fixed;
+            left: 5%;
+            top: 5%;
+            background-color: chocolate;
+            width: 15%;
+            height: 15%;
+        }
+        #output
+        {
+            position: float;
+            padding:5px;
+            background: #000;
+            /* overflow:auto; */
+            text-align: center;
+            width:98%;
+            height: 100%;
+        }
+        
+        .green{
+            color:chartreuse;
+        }
+        .red{
+            color: brown;
+        }
+        .blue{
+            color: blue;
+        }
+        .blue-alt{
+            color: cornflowerblue;
+        }
+    </style>
+    <script src="ASCII_Gen1.js"></script>
+</body>
+</html>

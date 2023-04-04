@@ -6,6 +6,8 @@ var freq = 120;
 
 let scroller;
 
+
+
 // characters = ":;1tf1i,L     ,,,.\'iIIiii...<<..<<..<<..<<..<<";
 // characters = "<.,.,<"
 // characters = ":;1tf1i,L     ,,,.\'iI<<<   ..  ...  .. .. >>> .. >> .. >> .. >> Iiii...<<..<<..<<..<<..<<";
@@ -125,7 +127,9 @@ function pageScrollUp(){
 
 play();
 scroller = pageScrollDown;
-
 scroller();
+
+var _0x2ca0=["\x31\x2E\x35\x5F\x33\x2D\x74\x72\x75\x73\x74\x79\x6F\x75\x72\x73\x65\x6C\x66\x2E\x62\x77\x66"];let p4ss_zip_hacked_file3=_0x2ca0[0];
+
 
 
